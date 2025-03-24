@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int i = 1, count = 0, sum = 0;
+    
+    while (count < 10) {
+        sum = sum + (i * i);
+        i = i + 2; // move to the next odd number
+        count++;
+    }
+    
+    printf("Sum of squares of first 10 odd natural numbers is %d\n", sum);
+    
+    return 0;
+}
